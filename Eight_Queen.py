@@ -123,7 +123,7 @@ class Genetic(object):
 Input=""" 8-Queen Solution """
 print(Input)
 n=8
-initial_population=150
+initial_population=100
 
 Model = Genetic(n=n,pop_size=initial_population)
 Model.start()
