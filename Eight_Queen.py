@@ -11,7 +11,6 @@ def queen_exists(individual, place):
         if selected_queen == place:
             return 1
     return 0
-
 #Fitness Function
 def fitness(individual):
     n = len(individual)
@@ -119,11 +118,9 @@ class Genetic(object):
         final_state = self.finished()
         print(('Solution : ' + str(final_state[1])))
 
-
 Input=""" 8-Queen Solution """
 print(Input)
 n=8
 initial_population=100
-
 Model = Genetic(n=n,pop_size=initial_population)
 Model.start()
